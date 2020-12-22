@@ -1,0 +1,25 @@
+.container{
+    width: 100vw;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.colum{
+    width: 33.33%;
+}
+.jumping{
+    text-align: center;
+    background-color: darkslategrey;
+    color: white;
+}
+.data{
+    color: black;
+}
+.btn{
+    width: 90%;
+    border-radius: 5px;
+    background-color: midnightblue;
+    color: white;
+    margin-bottom: 5px;
+}
