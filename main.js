@@ -111,6 +111,7 @@
         // handleChangedValue)
       document.querySelector('#start').disabled = false
       document.querySelector('#stop').disabled = true
+      alert("pulse escribir")
     })
   }
 
