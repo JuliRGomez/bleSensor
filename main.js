@@ -6,6 +6,7 @@
   var bluetoothDeviceDetected
   var gattCharacteristic
   var gattCharacteristicTwo
+  var inter;
   let respuesta;
 
   document.querySelector('#read').addEventListener('click', function() {
@@ -70,6 +71,7 @@
     gattCharacteristic.writeValue(valueToWrite)
     .then(_ => {
         console.log('variable seteada.');
+            inter=setInterval(readOne,500,"JavaScript");
             })
         .catch(error => { console.error(error); });
   }
@@ -138,6 +140,7 @@
     console.log('> ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ' Respuesta :' + indicator+','+tVuelo+','+tPiso)
     //alert("la altura es : "+altura)
     document.querySelector('#height').value= altura;
+    clearInterval(inter);
     }
     
   }
